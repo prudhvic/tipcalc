@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;1,400;1,500;1,800&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-family: "Koulen", cursive;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #015958;
+}
+.amounts .active {
+  background-color: white;
+  color: #015958;
+  border: 1px solid;
+}
+button {
+  border: none;
+  font-family: inherit;
+  padding: 0.3em 0.6em;
+  font-weight: bold;
+}
+input {
+  max-width: 250px;
+  outline: none;
+  padding: 0.4em;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+input:focus {
+  outline: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #c7ffed;
+  padding: 10px;
+  overflow: hidden;
+}
+.container {
+  background-color: #023535;
+  color: #0fc2c0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 960px;
+  padding: 10px;
+  gap: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.section-1 {
+  padding: 1em;
+  border-radius: 5px;
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+}
+.input-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.input-info label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.input-info input {
+  padding: 0.4em;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.percent-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.amounts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  gap: 0.5em;
+}
+.amounts input::placeholder {
+  text-align: center;
+}
+.amounts button {
+  background-color: #023535;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+.amounts input {
+  padding: 0;
+  padding-left: 5px;
+  text-align: center;
+}
+.people-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.people-info label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.section-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+}
+.tip-amount,
+.total-amount {
+  display: flex;
+  padding: 0.5em;
+  font-size: 1.4rem;
+  align-items: center;
+  gap: 1rem;
+}
+.tip-amount h3,
+.total-amount h3 {
+  color: white;
+}
+.section-2 button {
+  align-self: end;
+  padding: 1em;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  background-color: #015958;
+  color: aliceblue;
+  font-weight: bold;
+}
+button:hover {
+  background-color: white;
+  color: #015958;
+  border: 1px solid;
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  input {
+    max-width: 100%;
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-2 button {
+    width: 100%;
+    padding: 0.5em;
+  }
+  .tip-amount,
+  .total-amount {
+    font-size: 1.2rem;
+  }
+}

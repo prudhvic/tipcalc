@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tip calculator</h1>
+    <main class="container">
+      <section class="section-1">
+        <div class="input-info">
+          <label for="Bill"> Bill </label>
+          <input type="number" min="1" id="Bill" placeholder="$0.00" />
+        </div>
+        <div class="percent-info">
+          <h2 class="label">select Tip %</h2>
+          <div class="amounts">
+            <button data-percent="5">5%</button>
+            <button data-percent="10">10%</button>
+            <button data-percent="15">15%</button>
+            <button data-percent="20">20%</button>
+            <button data-percent="25">25%</button>
+            <input
+              type="number"
+              id="custom-amount"
+              placeholder="custom"
+              min="1"
+            />
+          </div>
+        </div>
+        <div class="people-info">
+          <label>Number of people</label>
+          <input type="number" min="1" id="num-people" />
+        </div>
+      </section>
+      <section class="section-2">
+        <div>
+          <div class="tip-amount">
+            <h3>Tip Amount <span>/ person</span></h3>
+            <h2 id="tip">$4.25</h2>
+          </div>
+          <div class="total-amount">
+            <h3>Total amount<span>/ person</span></h3>
+            <h2 id="total">$4.25</h2>
+          </div>
+        </div>
+
+        <button class="reset-btn">Reset</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
